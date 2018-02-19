@@ -14,11 +14,24 @@
       <file leaf-file-name="Enigma.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Enigma/src/Enigma.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rotore1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enigma/src/Rotore1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
-                <element signature="e#64#65#0" expanded="true" />
-                <element signature="e#99#100#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#977#978#0" expanded="true" />
+                <element signature="e#1006#1007#0" expanded="true" />
+                <element signature="e#1050#1051#0" expanded="true" />
+                <element signature="e#1079#1080#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -44,12 +57,14 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Enigma/src/Rotore.java" />
+        <option value="$PROJECT_DIR$/Enigma/src/Rotore1.java" />
         <option value="$PROJECT_DIR$/Enigma/src/Enigma.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="260" />
+    <option name="x" value="153" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
@@ -81,6 +96,12 @@
               <item name="Enigma-Machine" type="b2602c69:ProjectViewProjectNode" />
               <item name="Enigma-Machine" type="462c0819:PsiDirectoryNode" />
               <item name="Enigma" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Enigma-Machine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Enigma-Machine" type="462c0819:PsiDirectoryNode" />
+              <item name="Enigma" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -229,7 +250,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="260" y="20" width="1400" height="1000" extended-state="0" />
+    <frame x="153" y="20" width="1400" height="1000" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -276,14 +297,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Enigma/src/Rotore1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#977#978#0" expanded="true" />
+            <element signature="e#1006#1007#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1079#1080#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Enigma/src/Enigma.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#64#65#0" expanded="true" />
-            <element signature="e#99#100#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="73" lean-forward="true" selection-start-line="7" selection-start-column="73" selection-end-line="7" selection-end-column="73" />
+          <folding />
         </state>
       </provider>
     </entry>

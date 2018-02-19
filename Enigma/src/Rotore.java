@@ -21,11 +21,11 @@ public abstract class Rotore {
         else StartIndice++;
     }
 
-    public ArrayList<String> getLatoDx() {
+    public ArrayList<String> getLatoDx(){
         return LatoDx;
     }
 
-    public ArrayList<String> getLatoSx() {
+    public ArrayList<String> getLatoSx(){
         return LatoSx;
     }
 }

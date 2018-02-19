@@ -33,7 +33,7 @@ public class Enigma {
         Riflettore rif = new Riflettore(0);
         Enigma macchina = new Enigma(primo, secondo, terzo, rif);
 
-        System.out.println("INPUT LETTERA d");
-        System.out.println("OUTPUT LETTERA "+ macchina.codifica("d"));
+        System.out.println("INPUT LETTERA n");
+        System.out.println("OUTPUT LETTERA "+ macchina.codifica("n" ));
     }
 }

@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 
-public class Rotore1 {
+public class Rotore2 {
     private String[] Dx = new String[] { "q", "w", "e", "r", "t", "z", "u", "i", "o", "a", "s", "d", "f", "g", "h", "j", "k", "p", "y", "x", "c", "v", "b", "n", "m", "l" };
-    private String[] Sx = new String[] { "a", "v", "o", "e", "y", "f", "w", "l", "d", "q", "c", "b", "s", "p", "t", "k", "r", "g", "i", "j", "u", "h", "x", "z", "m", "n"};
+    private String[] Sx = new String[] { "y", "u", "f", "h", "x", "z", "m", "n", "j", "g", "o", "p", "a", "q", "i", "r", "l", "d", "t", "w", "v", "k", "s", "b", "c", "e"};
     private ArrayList<String> LatoDx = new ArrayList<>();
     private ArrayList<String> LatoSx = new ArrayList<>();
     private Integer StartIndice;
 
-    public Rotore1(Integer indice) //lettera iniziale scelta al posizionamento del rotor
+    public Rotore2(Integer indice) //lettera iniziale scelta al posizionamento del rotor
     {
         StartIndice = indice;
         while(LatoDx.size() != Dx.length) {

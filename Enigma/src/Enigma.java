@@ -5,6 +5,6 @@ public class Enigma {
         Rotore1 secondo = new Rotore1(5);
         Rotore1 terzo = new Rotore1(0);
 
-        System.out.println(primo.getLatoDx() + "\n" + primo.getLatoSx());
+        System.out.println(terzo.getLatoDx() + "\n" + terzo.getLatoSx());
     }
 }

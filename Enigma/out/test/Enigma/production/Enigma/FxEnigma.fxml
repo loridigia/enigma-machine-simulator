@@ -12,7 +12,8 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1">
+<VBox prefHeight="900.0" prefWidth="800.0" fx:controller="Controller" xmlns="http://javafx.com/javafx/9.0.4"
+      xmlns:fx="http://javafx.com/fxml/1">
   <children>
     <MenuBar prefHeight="0.0" prefWidth="650.0" VBox.vgrow="NEVER">
       <menus>
@@ -55,191 +56,196 @@
     </MenuBar>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" styleClass="body" stylesheets="@style.css" VBox.vgrow="ALWAYS">
          <children>
-            <ChoiceBox layoutX="454.0" layoutY="14.0" prefHeight="104.0" prefWidth="18.0" />
-            <ChoiceBox layoutX="373.0" layoutY="14.0" prefHeight="104.0" prefWidth="6.0" />
-            <ChoiceBox layoutX="293.0" layoutY="14.0" prefHeight="104.0" prefWidth="18.0" />
-            <Circle fill="WHITE" layoutX="45.0" layoutY="190.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="130.0" layoutY="190.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="219.0" layoutY="190.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="551.0" />
-            <Circle fill="WHITE" layoutX="309.0" layoutY="190.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="461.0" />
-            <Circle fill="WHITE" layoutX="399.0" layoutY="190.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="371.0" />
-            <Circle fill="WHITE" layoutX="489.0" layoutY="190.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="281.0" />
-            <Circle fill="WHITE" layoutX="579.0" layoutY="190.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="191.0" />
-            <Circle fill="WHITE" layoutX="669.0" layoutY="190.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="101.0" />
-            <Circle fill="WHITE" layoutX="759.0" layoutY="190.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="11.0" />
-            <Circle fill="WHITE" layoutX="87.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="179.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="269.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="359.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="449.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="539.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="629.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="719.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="48.0" layoutY="366.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="134.0" layoutY="366.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="222.0" layoutY="366.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="312.0" layoutY="366.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="402.0" layoutY="366.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="492.0" layoutY="366.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="582.0" layoutY="366.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="672.0" layoutY="366.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Circle fill="WHITE" layoutX="762.0" layoutY="366.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
-            <Button layoutX="44.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Q" AnchorPane.leftAnchor="44.0" />
-            <Button layoutX="124.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="W" AnchorPane.leftAnchor="124.0" />
-            <Button layoutX="203.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="E" AnchorPane.leftAnchor="203.0" />
-            <Button layoutX="284.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="R" AnchorPane.leftAnchor="284.0" />
-            <Button layoutX="364.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="T" AnchorPane.leftAnchor="364.0" />
-            <Button layoutX="444.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Z" AnchorPane.leftAnchor="444.0" />
-            <Button layoutX="524.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="U" AnchorPane.leftAnchor="524.0" />
-            <Button layoutX="604.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="I" AnchorPane.leftAnchor="604.0" />
-            <Button layoutX="684.0" layoutY="462.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="O" AnchorPane.leftAnchor="684.0" />
-            <Button layoutX="84.0" layoutY="539.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="A" />
-            <Button layoutX="164.0" layoutY="539.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="S" />
-            <Button layoutX="243.0" layoutY="539.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="D" />
-            <Button layoutX="324.0" layoutY="539.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="F" />
-            <Button layoutX="404.0" layoutY="539.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="G" />
-            <Button layoutX="484.0" layoutY="539.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="H" />
-            <Button layoutX="564.0" layoutY="539.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="J" />
-            <Button layoutX="644.0" layoutY="539.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="K" />
-            <Button layoutX="44.0" layoutY="615.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="P" />
-            <Button layoutX="124.0" layoutY="615.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Y" />
-            <Button layoutX="203.0" layoutY="615.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="X" />
-            <Button layoutX="284.0" layoutY="615.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="C" />
-            <Button layoutX="364.0" layoutY="615.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="V" />
-            <Button layoutX="444.0" layoutY="615.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="B" />
-            <Button layoutX="524.0" layoutY="615.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="N" />
-            <Button layoutX="604.0" layoutY="615.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="M" />
-            <Button layoutX="684.0" layoutY="615.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="L" />
-            <Label layoutX="76.0" layoutY="255.0" prefHeight="50.0" prefWidth="19.0" text="A" textAlignment="CENTER">
+            <ChoiceBox layoutX="293.0" layoutY="22.0" prefHeight="28.0" prefWidth="36.0" />
+            <ChoiceBox layoutX="372.0" layoutY="22.0" prefHeight="28.0" prefWidth="36.0" />
+            <ChoiceBox layoutX="450.0" layoutY="22.0" prefHeight="28.0" prefWidth="36.0" />
+            <ChoiceBox layoutX="450.0" layoutY="71.0" prefHeight="75.0" prefWidth="32.0" />
+            <ChoiceBox layoutX="372.0" layoutY="71.0" prefHeight="75.0" prefWidth="32.0" />
+            <ChoiceBox layoutX="293.0" layoutY="71.0" prefHeight="75.0" prefWidth="36.0" />
+            <ChoiceBox layoutX="160.0" layoutY="71.0" prefHeight="75.0" prefWidth="31.0" />
+            <Circle id="circleQ" fill="WHITE" layoutX="42.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="127.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="216.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="554.0" />
+            <Circle fill="WHITE" layoutX="306.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="464.0" />
+            <Circle fill="WHITE" layoutX="396.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="374.0" />
+            <Circle fill="WHITE" layoutX="486.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="284.0" />
+            <Circle fill="WHITE" layoutX="576.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="194.0" />
+            <Circle fill="WHITE" layoutX="666.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="104.0" />
+            <Circle fill="WHITE" layoutX="756.0" layoutY="280.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.rightAnchor="14.0" />
+            <Circle fill="WHITE" layoutX="84.0" layoutY="370.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="176.0" layoutY="370.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="266.0" layoutY="370.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="356.0" layoutY="370.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="446.0" layoutY="370.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="536.0" layoutY="370.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="626.0" layoutY="370.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="716.0" layoutY="370.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="45.0" layoutY="456.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="131.0" layoutY="456.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="219.0" layoutY="456.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="309.0" layoutY="456.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="399.0" layoutY="456.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="489.0" layoutY="456.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="579.0" layoutY="456.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="669.0" layoutY="456.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="WHITE" layoutX="759.0" layoutY="456.0" radius="30.0" stroke="BLACK" strokeType="INSIDE" />
+            <Button layoutX="41.0" layoutY="552.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Q" AnchorPane.leftAnchor="41.0" />
+            <Button layoutX="121.0" layoutY="552.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="W" AnchorPane.leftAnchor="121.0" />
+            <Button layoutX="200.0" layoutY="552.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="E" AnchorPane.leftAnchor="200.0" />
+            <Button layoutX="281.0" layoutY="552.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="R" AnchorPane.leftAnchor="281.0" />
+            <Button layoutX="361.0" layoutY="552.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="T" AnchorPane.leftAnchor="361.0" />
+            <Button layoutX="441.0" layoutY="552.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Z" AnchorPane.leftAnchor="441.0" />
+            <Button layoutX="521.0" layoutY="552.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="U" AnchorPane.leftAnchor="521.0" />
+            <Button layoutX="601.0" layoutY="552.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="I" AnchorPane.leftAnchor="601.0" />
+            <Button layoutX="681.0" layoutY="552.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="O" AnchorPane.leftAnchor="681.0" />
+            <Button layoutX="81.0" layoutY="629.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="A" />
+            <Button layoutX="161.0" layoutY="629.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="S" />
+            <Button layoutX="240.0" layoutY="629.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="D" />
+            <Button layoutX="321.0" layoutY="629.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="F" />
+            <Button layoutX="401.0" layoutY="629.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="G" />
+            <Button layoutX="481.0" layoutY="629.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="H" />
+            <Button layoutX="561.0" layoutY="629.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="J" />
+            <Button layoutX="641.0" layoutY="629.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="K" />
+            <Button layoutX="41.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="P" />
+            <Button layoutX="121.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Y" />
+            <Button layoutX="200.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="X" />
+            <Button layoutX="281.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="C" />
+            <Button layoutX="361.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="V" />
+            <Button layoutX="441.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="B" />
+            <Button layoutX="521.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="N" />
+            <Button layoutX="601.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="M" />
+            <Button layoutX="681.0" layoutY="705.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="L" />
+            <Label layoutX="73.0" layoutY="345.0" prefHeight="50.0" prefWidth="19.0" text="A" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="114.0" layoutY="165.0" prefHeight="50.0" prefWidth="32.0" text="W" textAlignment="CENTER">
+            <Label layoutX="111.0" layoutY="255.0" prefHeight="50.0" prefWidth="36.0" text="W" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="298.0" layoutY="165.0" prefHeight="50.0" prefWidth="22.0" text="R" textAlignment="CENTER">
+            <Label layoutX="295.0" layoutY="255.0" prefHeight="50.0" prefWidth="22.0" text="R" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="391.0" layoutY="165.0" prefHeight="50.0" prefWidth="11.0" text="T" textAlignment="CENTER">
+            <Label layoutX="388.0" layoutY="255.0" prefHeight="50.0" prefWidth="11.0" text="T" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="478.0" layoutY="165.0" prefHeight="50.0" prefWidth="19.0" text="Z" textAlignment="CENTER">
+            <Label layoutX="475.0" layoutY="255.0" prefHeight="50.0" prefWidth="19.0" text="Z" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="566.0" layoutY="165.0" prefHeight="50.0" prefWidth="32.0" text="U" textAlignment="CENTER">
+            <Label layoutX="563.0" layoutY="255.0" prefHeight="50.0" prefWidth="32.0" text="U" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="170.0" layoutY="255.0" prefHeight="50.0" prefWidth="19.0" text="S" textAlignment="CENTER">
+            <Label layoutX="167.0" layoutY="345.0" prefHeight="50.0" prefWidth="19.0" text="S" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="257.0" layoutY="255.0" prefHeight="50.0" prefWidth="25.0" text="D" textAlignment="CENTER">
+            <Label layoutX="254.0" layoutY="345.0" prefHeight="50.0" prefWidth="25.0" text="D" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="350.0" layoutY="255.0" prefHeight="50.0" prefWidth="19.0" text="F" textAlignment="CENTER">
+            <Label layoutX="347.0" layoutY="345.0" prefHeight="50.0" prefWidth="19.0" text="F" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="437.0" layoutY="255.0" prefHeight="50.0" prefWidth="24.0" text="G" textAlignment="CENTER">
+            <Label layoutX="434.0" layoutY="345.0" prefHeight="50.0" prefWidth="24.0" text="G" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="527.0" layoutY="255.0" prefHeight="50.0" prefWidth="25.0" text="H" textAlignment="CENTER">
+            <Label layoutX="524.0" layoutY="345.0" prefHeight="50.0" prefWidth="25.0" text="H" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="623.0" layoutY="255.0" prefHeight="50.0" prefWidth="10.0" text="J" textAlignment="CENTER">
+            <Label layoutX="620.0" layoutY="345.0" prefHeight="50.0" prefWidth="10.0" text="J" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="664.0" layoutY="165.0" prefHeight="50.0" prefWidth="3.0" text="I" textAlignment="CENTER">
+            <Label layoutX="661.0" layoutY="255.0" prefHeight="50.0" prefWidth="3.0" text="I" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="746.0" layoutY="165.0" prefHeight="50.0" prefWidth="32.0" text="O" textAlignment="CENTER">
+            <Label layoutX="743.0" layoutY="255.0" prefHeight="50.0" prefWidth="32.0" text="O" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="38.0" layoutY="341.0" prefHeight="50.0" prefWidth="19.0" text="P" textAlignment="CENTER">
+            <Label layoutX="35.0" layoutY="431.0" prefHeight="50.0" prefWidth="19.0" text="P" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="125.0" layoutY="341.0" prefHeight="50.0" prefWidth="19.0" text="Y" textAlignment="CENTER">
+            <Label layoutX="122.0" layoutY="431.0" prefHeight="50.0" prefWidth="19.0" text="Y" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="212.0" layoutY="341.0" prefHeight="50.0" prefWidth="19.0" text="X" textAlignment="CENTER">
+            <Label layoutX="209.0" layoutY="431.0" prefHeight="50.0" prefWidth="19.0" text="X" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="301.0" layoutY="341.0" prefHeight="50.0" prefWidth="19.0" text="C" textAlignment="CENTER">
+            <Label layoutX="298.0" layoutY="431.0" prefHeight="50.0" prefWidth="19.0" text="C" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="391.0" layoutY="341.0" prefHeight="50.0" prefWidth="19.0" text="V" textAlignment="CENTER">
+            <Label layoutX="388.0" layoutY="431.0" prefHeight="50.0" prefWidth="19.0" text="V" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="482.0" layoutY="341.0" prefHeight="50.0" prefWidth="19.0" text="B" textAlignment="CENTER">
+            <Label layoutX="479.0" layoutY="431.0" prefHeight="50.0" prefWidth="19.0" text="B" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="569.0" layoutY="341.0" prefHeight="50.0" prefWidth="26.0" text="N" textAlignment="CENTER">
+            <Label layoutX="566.0" layoutY="431.0" prefHeight="50.0" prefWidth="26.0" text="N" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="709.0" layoutY="255.0" prefHeight="50.0" prefWidth="19.0" text="K" textAlignment="CENTER">
+            <Label layoutX="706.0" layoutY="345.0" prefHeight="50.0" prefWidth="19.0" text="K" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="657.0" layoutY="341.0" prefHeight="50.0" prefWidth="31.0" text="M" textAlignment="CENTER">
+            <Label layoutX="654.0" layoutY="431.0" prefHeight="50.0" prefWidth="31.0" text="M" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="753.0" layoutY="341.0" prefHeight="50.0" prefWidth="19.0" text="L" textAlignment="CENTER">
+            <Label layoutX="750.0" layoutY="431.0" prefHeight="50.0" prefWidth="19.0" text="L" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="32.0" layoutY="165.0" prefHeight="50.0" prefWidth="32.0" text="Q" textAlignment="CENTER">
+            <Label layoutX="29.0" layoutY="255.0" prefHeight="50.0" prefWidth="32.0" text="Q" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
-            <Label layoutX="210.0" layoutY="165.0" prefHeight="50.0" prefWidth="7.0" text="E" textAlignment="CENTER">
+            <Label layoutX="207.0" layoutY="255.0" prefHeight="50.0" prefWidth="7.0" text="E" textAlignment="CENTER">
                <font>
                   <Font size="34.0" />
                </font>
             </Label>
+            <Button layoutX="324.0" layoutY="187.0" mnemonicParsing="false" text="IMPOSTA ROTORI" />
          </children>
     </AnchorPane>
   </children>

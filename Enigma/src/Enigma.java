@@ -27,13 +27,5 @@ public class Enigma {
 
     }
     public static void main(String[] args){
-        Rotore primo = new Rotore3(0);
-        Rotore secondo = new Rotore2(0);
-        Rotore terzo = new Rotore1(0);
-        Riflettore rif = new Riflettore(0);
-        Enigma macchina = new Enigma(primo, secondo, terzo, rif);
-
-        System.out.println("INPUT LETTERA n");
-        System.out.println("OUTPUT LETTERA "+ macchina.codifica("n" ));
     }
 }

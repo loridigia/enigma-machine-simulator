@@ -81,8 +81,8 @@
       <file leaf-file-name="FxEnigma.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Enigma/src/FxEnigma.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4852">
-              <caret line="329" column="42" lean-forward="false" selection-start-line="329" selection-start-column="42" selection-end-line="329" selection-end-column="42" />
+            <state relative-caret-position="4114">
+              <caret line="330" column="20" lean-forward="false" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -157,7 +157,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="2" />
     <option name="width" value="1751" />
     <option name="height" value="1000" />
@@ -362,7 +362,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="2" y="0" width="1751" height="1000" extended-state="0" />
+    <frame x="2" y="0" width="1751" height="1000" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -400,6 +400,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39930555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298611" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -826,8 +827,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Enigma/src/FxEnigma.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4852">
-          <caret line="329" column="42" lean-forward="false" selection-start-line="329" selection-start-column="42" selection-end-line="329" selection-end-column="42" />
+        <state relative-caret-position="4114">
+          <caret line="330" column="20" lean-forward="false" selection-start-line="330" selection-start-column="20" selection-end-line="330" selection-end-column="20" />
           <folding />
         </state>
       </provider>

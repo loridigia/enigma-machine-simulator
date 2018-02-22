@@ -31,11 +31,19 @@ public class Controller implements Initializable {
 	private String[] alpha = new String[] { "q", "w", "e", "r", "t", "z", "u", "i", "o", "a", "s", "d", "f", "g", "h", "j", "k", "p", "y", "x", "c", "v", "b", "n", "m", "l" };
 
 	@FXML
-	private Circle[] circles = new Circle[]{circleQ, circleW, circleE, circleR, circleT, circleZ, circleU, circleI, circleO, circleA, circleS, circleD, circleF, circleG, circleH,
-			circleJ, circleK, circleP, circleY, circleX, circleC, circleV, circleB, circleN, circleM, circleL };
+	private Circle[] circles;
+	private Button[] buttons;
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
+
+		//INITIALIZE ARRAY OF CIRCLES
+		circles = new Circle[]{circleQ, circleW, circleE, circleR, circleT, circleZ, circleU, circleI, circleO, circleA, circleS, circleD, circleF, circleG, circleH,
+				circleJ, circleK, circleP, circleY, circleX, circleC, circleV, circleB, circleN, circleM, circleL };
+		buttons = new Button[]{buttonQ, buttonW, buttonE, buttonR, buttonT, buttonZ, buttonU, buttonI, buttonO, buttonA, buttonS, buttonD, buttonF, buttonG, buttonH,
+				buttonJ, buttonK, buttonP, buttonY, buttonX, buttonC, buttonV, buttonB, buttonN, buttonM, buttonL};
+
+
 		// INITIALIZE POSIZIONE ROTORI
 		choicepos1.getItems().addAll("I", "II", "III");
 		choicepos1.setValue("I");
@@ -76,29 +84,30 @@ public class Controller implements Initializable {
 
 
 			//Button Interactive
-			buttonQ.setOnAction(event->{
-				String lettera = machine.codifica("q");
-				int i = Arrays.asList(alpha).indexOf(lettera);
-				System.out.println(i);
-				Circle ciao = circles[6];
-				System.out.println(ciao);
-				//ciao.setFill(new Color(1,1,0, 1.0));
-				/*Timeline time = new Timeline(new KeyFrame(Duration.millis(1000), a -> circle.setFill(new Color(1,1,1,1.0))));
-				time.play();
-				System.out.println(lettera); */
-
-
-			});
-
-
-
-
-
+			for(int i=0; i<buttons.length; i++){
+				String index = alpha[i];
+				buttons[i].setOnAction(event -> {
+					System.out.println(index);
+					String lettera = machine.codifica(index);
+					TurnOnAndOff(lettera);
+				} );
+			}
 
 			System.out.println("POSIZIONE 1: ROTORE " + pos1 + "\n POSIZIONE 2: ROTORE " + pos2 + "\n POSIZIONE 3: ROTORE " + pos3 + "\n");
 		});
 
 		
+	}
+
+	public void TurnOnAndOff(String lettera){
+		int i = Arrays.asList(alpha).indexOf(lettera);
+		System.out.println(i);
+		Circle circle = circles[i];
+		circle.setFill(new Color(1,1,0, 1.0));
+		Timeline time = new Timeline(new KeyFrame(Duration.millis(1000), a -> circle.setFill(new Color(1,1,1,1.0))));
+		time.play();
+		System.out.println(lettera);
+
 	}
 
 	public Rotore AssignRotore(Integer rotore, int valueStart){
@@ -113,5 +122,6 @@ public class Controller implements Initializable {
 		else if(choicepos.getValue() == "II") return 2;
 		else return 3;
 	}
+
 	
 }

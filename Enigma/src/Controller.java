@@ -1,3 +1,4 @@
+import javafx.animation.*;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.*;
@@ -5,8 +6,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Shape;
+import javafx.util.Duration;
 
 import java.net.URL;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 
@@ -20,7 +24,15 @@ public class Controller implements Initializable {
 			buttonD, buttonF, buttonG, buttonH, buttonJ, buttonK, buttonL, buttonZ, buttonX, buttonC, buttonV, buttonB, buttonN, buttonM, impostaRotori;
 
 	@FXML
-	private ChoiceBox choicepos1, choicepos2, choicepos3, choiceSX, choiceCE, choiceDX, choiceREF;
+	private ChoiceBox choicepos1, choicepos2, choicepos3;
+	@FXML
+	private ChoiceBox<Integer> choiceSX, choiceCE, choiceDX, choiceREF;
+
+	private String[] alpha = new String[] { "q", "w", "e", "r", "t", "z", "u", "i", "o", "a", "s", "d", "f", "g", "h", "j", "k", "p", "y", "x", "c", "v", "b", "n", "m", "l" };
+
+	@FXML
+	private Circle[] circles = new Circle[]{circleQ, circleW, circleE, circleR, circleT, circleZ, circleU, circleI, circleO, circleA, circleS, circleD, circleF, circleG, circleH,
+			circleJ, circleK, circleP, circleY, circleX, circleC, circleV, circleB, circleN, circleM, circleL };
 	
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -53,10 +65,46 @@ public class Controller implements Initializable {
 				pos3 = 3;
 			}
 
+			//ASSEGNAMENT ROTORS SX,CE,DX FOR PARAMETERS OF ENIGMA CLASS
+			Rotore SX = AssignRotore(pos1, choiceSX.getValue());
+			Rotore CE = AssignRotore(pos2, choiceCE.getValue());
+			Rotore DX = AssignRotore(pos3, choiceDX.getValue());
+			Riflettore REF = new Riflettore(choiceREF.getValue());
+
+			//Initialize Enigma Class
+			Enigma machine = new Enigma(SX,CE,DX,REF);
+
+
+			//Button Interactive
+			buttonQ.setOnAction(event->{
+				String lettera = machine.codifica("q");
+				int i = Arrays.asList(alpha).indexOf(lettera);
+				System.out.println(i);
+				Circle ciao = circles[6];
+				System.out.println(ciao);
+				//ciao.setFill(new Color(1,1,0, 1.0));
+				/*Timeline time = new Timeline(new KeyFrame(Duration.millis(1000), a -> circle.setFill(new Color(1,1,1,1.0))));
+				time.play();
+				System.out.println(lettera); */
+
+
+			});
+
+
+
+
+
+
 			System.out.println("POSIZIONE 1: ROTORE " + pos1 + "\n POSIZIONE 2: ROTORE " + pos2 + "\n POSIZIONE 3: ROTORE " + pos3 + "\n");
 		});
 
 		
+	}
+
+	public Rotore AssignRotore(Integer rotore, int valueStart){
+		if ( rotore == 1 ) return new Rotore1(valueStart);
+		else if( rotore == 2) return new Rotore2(valueStart);
+		else return new Rotore3(valueStart);
 	}
 
 	public Integer ChoicePosition(ChoiceBox choicepos){
@@ -67,5 +115,3 @@ public class Controller implements Initializable {
 	}
 	
 }
-
-//circleQ.setFill(new Color(1,1,0,1.0));

@@ -23,8 +23,21 @@ public class Enigma {
         int SxRitorno = RotoreSx.inputRitorno(indiceRiflesso);
         int CeRitorno = RotoreCe.inputRitorno(SxRitorno);
         int DxRitorno = RotoreDx.inputRitorno(CeRitorno);
+        ruota();
         return inizio[DxRitorno];
 
+    }
+
+    public void ruota(){
+        if(RotoreDx.StartIndice == 25) {
+            RotoreDx.StartIndice = 0;
+            if (RotoreCe.StartIndice == 25) {
+                RotoreCe.StartIndice = 0;
+                if (RotoreSx.StartIndice == 25) {
+                    RotoreSx.StartIndice = 0;
+                } else RotoreSx.StartIndice++;
+            } else RotoreCe.StartIndice++;
+        }else RotoreDx.StartIndice ++;
     }
     public static void main(String[] args){
     }

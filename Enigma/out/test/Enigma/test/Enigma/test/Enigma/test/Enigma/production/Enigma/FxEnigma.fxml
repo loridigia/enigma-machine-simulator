@@ -12,7 +12,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+<VBox prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
   <children>
     <MenuBar prefHeight="0.0" prefWidth="650.0" VBox.vgrow="NEVER">
       <menus>
@@ -327,7 +327,7 @@
                   <Font size="34.0" />
                </font>
             </Label>
-            <Button fx:id="impostaRotori" layoutX="294.0" layoutY="177.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="184.0" text="IMPOSTA ROTORI" />
+            <Button fx:id = "impostaRotori" layoutX="324.0" layoutY="187.0" mnemonicParsing="false" text="IMPOSTA ROTORI" />
          </children>
     </AnchorPane>
   </children>

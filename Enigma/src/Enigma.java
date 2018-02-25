@@ -23,7 +23,6 @@ public class Enigma {
         int SxRitorno = RotoreSx.inputRitorno(indiceRiflesso);
         int CeRitorno = RotoreCe.inputRitorno(SxRitorno);
         int DxRitorno = RotoreDx.inputRitorno(CeRitorno);
-        ruota();
         return inizio[DxRitorno];
 
     }

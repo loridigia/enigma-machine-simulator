@@ -28,6 +28,5 @@ public class main extends Application {
         primaryStage.show();
 
         Enigma mac = new Enigma(new Rotore3(0), new Rotore2(0), new Rotore1(0), new Riflettore(0));
-        System.out.println(mac.codifica("a"));
     }
 }

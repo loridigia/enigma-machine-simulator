@@ -27,6 +27,7 @@ public class Enigma {
 
     }
 
+
     public void ruota(){
         if(RotoreDx.StartIndice == 25) {
             RotoreDx.StartIndice = 0;

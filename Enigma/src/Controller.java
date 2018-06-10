@@ -26,7 +26,7 @@ public class Controller implements Initializable {
 	@FXML
 	private ChoiceBox choicepos1, choicepos2, choicepos3;
 	@FXML
-	private ChoiceBox<Integer> choiceSX, choiceCE, choiceDX, choiceREF;
+	private ChoiceBox<String> choiceSX, choiceCE, choiceDX, choiceREF;
 
 	private String[] alpha = new String[] { "q", "w", "e", "r", "t", "z", "u", "i", "o", "a", "s", "d", "f", "g", "h", "j", "k", "p", "y", "x", "c", "v", "b", "n", "m", "l" };
 
@@ -53,14 +53,14 @@ public class Controller implements Initializable {
 		choicepos3.setValue("III");
 
 		// INITIALIZE VALUE OF ROTORI
-		choiceREF.getItems().addAll(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26);
-		choiceREF.setValue(0);
-		choiceSX.getItems().addAll(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26);
-		choiceSX.setValue(0);
-		choiceCE.getItems().addAll(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26);
-		choiceCE.setValue(0);
-		choiceDX.getItems().addAll(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26);
-		choiceDX.setValue(0);
+		choiceREF.getItems().addAll("Q", "W", "E", "R", "T", "Z", "U", "I", "O", "A", "S", "D", "F", "G", "H", "J", "K", "P", "Y", "X", "C", "V", "B", "N", "M", "L");
+		choiceREF.setValue("Q");
+		choiceSX.getItems().addAll("Q", "W", "E", "R", "T", "Z", "U", "I", "O", "A", "S", "D", "F", "G", "H", "J", "K", "P", "Y", "X", "C", "V", "B", "N", "M", "L");
+		choiceSX.setValue("Q");
+		choiceCE.getItems().addAll("Q", "W", "E", "R", "T", "Z", "U", "I", "O", "A", "S", "D", "F", "G", "H", "J", "K", "P", "Y", "X", "C", "V", "B", "N", "M", "L");
+		choiceCE.setValue("Q");
+		choiceDX.getItems().addAll("Q", "W", "E", "R", "T", "Z", "U", "I", "O", "A", "S", "D", "F", "G", "H", "J", "K", "P", "Y", "X", "C", "V", "B", "N", "M", "L");
+		choiceDX.setValue("Q");
 
 		impostaRotori.setOnAction( e -> {
 			int pos1 = ChoicePosition(choicepos1);
@@ -74,10 +74,10 @@ public class Controller implements Initializable {
 			}
 
 			//ASSEGNAMENT ROTORS SX,CE,DX FOR PARAMETERS OF ENIGMA CLASS
-			Rotore SX = AssignRotore(pos1, choiceSX.getValue());
-			Rotore CE = AssignRotore(pos2, choiceCE.getValue());
-			Rotore DX = AssignRotore(pos3, choiceDX.getValue());
-			Riflettore REF = new Riflettore(choiceREF.getValue());
+			Rotore SX = AssignRotore(pos1, Arrays.asList(alpha).indexOf(choiceSX.getValue().toLowerCase()));
+			Rotore CE = AssignRotore(pos2, Arrays.asList(alpha).indexOf(choiceCE.getValue().toLowerCase()));
+			Rotore DX = AssignRotore(pos3, Arrays.asList(alpha).indexOf(choiceDX.getValue().toLowerCase()));
+			Riflettore REF = new Riflettore(Arrays.asList(alpha).indexOf(choiceREF.getValue().toLowerCase()));
 
 			//Initialize Enigma Class
 			Enigma machine = new Enigma(SX,CE,DX,REF);

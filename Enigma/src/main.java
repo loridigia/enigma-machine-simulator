@@ -14,7 +14,7 @@ public class main extends Application {
     }
 
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) { // LAUNCHER GRAFICO, IMPOSTA CONTENUTI PER LA GRAFICA
         Parent root;
         try {
             root = FXMLLoader.load(getClass().getResource("FxEnigma.fxml"));
@@ -27,5 +27,6 @@ public class main extends Application {
         primaryStage.sizeToScene();
         primaryStage.show();
 
+        Enigma mac = new Enigma(new Rotore3(0), new Rotore2(0), new Rotore1(0), new Riflettore(0));
     }
 }

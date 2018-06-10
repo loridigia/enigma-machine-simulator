@@ -5,6 +5,7 @@ public class Rotore1 extends Rotore {
     public Rotore1(Integer indice) //lettera iniziale scelta al posizionamento del rotor
     {
         StartIndice = indice;
+
         while(LatoDx.size() != Dx.length) {
             try {
                 LatoDx.add(Dx[indice]);
